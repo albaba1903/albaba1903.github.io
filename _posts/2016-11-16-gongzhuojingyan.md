@@ -2,8 +2,8 @@
 layout: post
 title:  "Welcome to Cristo!"
 date:   2016-11-16 15:27:01 +0800
-categories: jekyll
-tag: jekyll
+categories: 工作经验
+tag: 面试经验
 ---
 
 * content
