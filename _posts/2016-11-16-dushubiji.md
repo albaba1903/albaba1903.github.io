@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Cristo!"
+title:  "知行合一!"
 date:   2016-11-16 16:15:01 +0800
 categories: 读书笔记
 tag: 王阳明
