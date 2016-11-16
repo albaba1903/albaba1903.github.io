@@ -17,9 +17,9 @@ layout: default
                   {% capture next_month %}{{ post.previous.date | date: "%m" }}{% endcapture %}
 
                   {% if forloop.first %}
-                    <li><a href="#year_{{this_year}}">{{this_year}}</a>
+                    <li><a href="#year_{{this_year}}">{{this_year}}年</a>
                       <ul class="nav">
-                        <li><a href="#month_{{this_year}}_{{this_month}}">{{this_month}}</a></li>
+                        <li><a href="#month_{{this_year}}_{{this_month}}">{{this_month}}月</a></li>
                   {% endif %}
 
                   {% if forloop.last %}
@@ -29,12 +29,12 @@ layout: default
                     {% if this_year != next_year %}
                         </ul>
                       </li>
-                      <li><a href="#year_{{next_year}}">{{next_year}}</a>
+                      <li><a href="#year_{{next_year}}">{{next_year}}年</a>
                         <ul class="nav">
-                          <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}</a></li>
+                          <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}月</a></li>
                     {% else %}    
                       {% if this_month != next_month %}
-                          <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}</a></li>
+                          <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}月</a></li>
                       {% endif %}
                     {% endif %}
                   {% endif %}
@@ -54,8 +54,8 @@ layout: default
                   {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
 
                   {% if forloop.first %}
-                    <h2 id="year_{{this_year}}">{{this_year}}</h2>
-                    <h3 id="month_{{this_year}}_{{this_month}}">{{this_month}}</h3>
+                    <h2 id="year_{{this_year}}">{{this_year}}年</h2>
+                    <h3 id="month_{{this_year}}_{{this_month}}">{{this_month}}月</h3>
                     <ul>
                   {% endif %}
 
@@ -68,12 +68,12 @@ layout: default
                     {% if this_year != next_year %}
                       </ul>
                       <h2 id="year_{{next_year}}">{{next_year}}</h2>
-                      <h3 id="month_{{next_year}}_{{next_month}}">{{next_month}}</h3>
+                      <h3 id="month_{{next_year}}_{{next_month}}">{{next_month}}月</h3>
                       <ul>
                     {% else %}    
                       {% if this_month != next_month %}
                         </ul>
-                        <h3 id="month_{{next_year}}_{{next_month}}">{{next_month}}</h3>
+                        <h3 id="month_{{next_year}}_{{next_month}}">{{next_month}}月</h3>
                         <ul>
                       {% endif %}
                     {% endif %}
