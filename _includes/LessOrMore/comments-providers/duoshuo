@@ -1,5 +1,5 @@
 <div class="ds-thread" data-thread-key="{{page.url}}" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}"></div>
-
+<style>#ds-thread .ds-powered-by{display:none!important;}</style>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"{{ site.FB.comments.duoshuo.short_name }}"};
 	(function() {
